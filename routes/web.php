@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 Route::get('/upload-form-cleanup', [CleanupController::class, 'showForm']);
 Route::post('/process-cleanup', [CleanupController::class, 'processCleanup'])->name('process-cleanup');
